@@ -1,0 +1,19 @@
+[
+  {
+    "file": "src/main.cpp",
+    "arguments": [
+      "/usr/bin/g++",
+      "-g",
+      "-DDEBUG",
+      "-Wall",
+      "-I./include",
+      "-std=c++20",
+      "-o",
+      ".obj/main.o",
+      "-c",
+      "src/main.cpp"
+    ],
+    "directory": "/home/ThatChemical/Documents/College/CS499-CS-Capstone/Enhancments/CS-320-Journal-enhancement1/Appointment-contact-book",
+    "output": ".obj/main.o"
+  }
+]

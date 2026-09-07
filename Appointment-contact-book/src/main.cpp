@@ -1,6 +1,7 @@
-#include <iostream>
+#include "Model/Task.h"
+
 
 int main()
 {
-	std::cout << "Hello, World" << std::endl;
+	Task task { "001", "Assignment", "CS-499 Assignment" };
 }
