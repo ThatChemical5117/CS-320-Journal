@@ -18,6 +18,8 @@ Appointment::Appointment(const std::string& id, const Date& date, const std::str
 void Appointment::SetId(const std::string& id) noexcept(false)
 {
 	// Do a check on the item
+	if (id.length() == 0)
+		throw std::invalid_argument("ID should not be empty");
 	if (id.length() > 10)
 		throw std::length_error("ID should be less than 10 characters in length");
 
@@ -27,15 +29,18 @@ void Appointment::SetId(const std::string& id) noexcept(false)
 
 void Appointment::SetDate(const Date& date) noexcept(false)
 {
-	// TODO: Throw custom date exception
-	if (!date.ok()) return;
+	if (!date.ok())
+		throw std::invalid_argument("Invalid Date");
+	if (date <= std::chrono::floor<std::chrono::days>(std::chrono::system_clock::now()))
+		throw std::invalid_argument("Date is in the past");
 
-	// TODO: Add check that the date is in the future for new Appointments
 	m_date = date;
 };
 
 void Appointment::SetDescription(const std::string& description) noexcept(false)
 {
+	if (description.length() == 0)
+		throw std::invalid_argument("Description should not be empty");
 	if (description.length() > 50)
 		throw std::length_error("Description should be less than 50 characters long");
 

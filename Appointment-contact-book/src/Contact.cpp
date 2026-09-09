@@ -1,27 +1,30 @@
 #include "Model/Contact.h"
 #include <stdexcept>
 
-
 Contact::Contact(const std::string& id, const std::string& firstName, const std::string& lastName, const std::string& phoneNumber, const std::string& address) noexcept(false)
 {
 	this->SetId(id);
 	this->SetFirstName(firstName);
 	this->SetLastName(lastName);
-	this->SetPhoneNumber(phoneNumber);
+	this->SetPhoneNumber(phoneNumber); 
 	this->SetAddress(address);
 };
 
 // Setters
 void Contact::SetId(const std::string& id) noexcept(false)
 {
+	if (id.length() == 0)
+		throw std::invalid_argument("Id should not be empty");
 	if (id.length() > 10)
 		throw std::length_error("ID should be less than 10 characters long");
-
+	
 	m_id = id;
 };
 
 void Contact::SetFirstName(const std::string& firstName) noexcept(false)
 {
+	if (firstName.length() == 0)
+		throw std::invalid_argument("First name should not be empty");
 	if (firstName.length() > 15)
 		throw std::length_error("First Name should be less than 15 characters long");
 
@@ -30,6 +33,8 @@ void Contact::SetFirstName(const std::string& firstName) noexcept(false)
 
 void Contact::SetLastName(const std::string& lastName) noexcept(false)
 {
+	if (lastName.length() == 0)
+		throw std::invalid_argument("Last name should no be empty");
 	if (lastName.length() > 15)
 		throw std::length_error("Last Name should be less than 15 characters long");
 
@@ -46,8 +51,12 @@ void Contact::SetPhoneNumber(const std::string& phoneNumber) noexcept(false)
 
 void Contact::SetAddress(const std::string& address) noexcept(false)
 {
+	if (address.length() == 0)
+		throw std::invalid_argument("Address should not be empty");
 	if (address.length() > 50)
 		throw std::length_error("Address should be less than 50 characters long");
+
+	m_address = address;
 };
 
 // Getters
