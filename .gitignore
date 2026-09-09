@@ -1,3 +1,5 @@
 bin
-Appointment-contact-book/.bin/*
+Appointment-contact-book/.obj/*
 Appointment-contact-book/.dep/*
+UnitTest/.obj/*
+UnitTest/.dep/*
