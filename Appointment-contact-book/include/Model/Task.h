@@ -15,6 +15,13 @@
 class Task
 {
 public:
+	enum class Fields
+	{
+		NAME,
+		DESCRIPTION
+	};
+
+public:
 	Task(const std::string& id, const std::string& name, const std::string& description) noexcept(false);
 	
 	// Mutators

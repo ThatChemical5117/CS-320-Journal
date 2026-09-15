@@ -8,7 +8,7 @@
  */
 
 // Constructor may throw an exception
-Appointment::Appointment(const std::string& id, const Date& date, const std::string& description) noexcept(false)
+Appointment::Appointment(const std::string& id, const std::chrono::year_month_day& date, const std::string& description) noexcept(false)
 {
 	this->SetId(id);
 	this->SetDate(date);
@@ -27,7 +27,7 @@ void Appointment::SetId(const std::string& id) noexcept(false)
 	m_id = id;
 }
 
-void Appointment::SetDate(const Date& date) noexcept(false)
+void Appointment::SetDate(const std::chrono::year_month_day& date) noexcept(false)
 {
 	if (!date.ok())
 		throw std::invalid_argument("Invalid Date");
@@ -54,7 +54,7 @@ const std::string_view Appointment::GetId() const noexcept
 }
 
 // Return a const reference to m_date
-const Date& Appointment::GetDate() const noexcept
+const std::chrono::year_month_day& Appointment::GetDate() const noexcept
 {
 	return m_date;
 }

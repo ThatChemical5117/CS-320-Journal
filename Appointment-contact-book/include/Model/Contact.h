@@ -12,6 +12,15 @@
 class Contact
 {
 public:
+	enum class FIELDS
+	{
+		FIRSTNAME,
+		LASTNAME,
+		PHONENUMBER,
+		ADDRESS
+	};
+
+public:
 	Contact(const std::string& id, const std::string& firstName, const std::string& lastName, const std::string& phoneNumber, const std::string& address) noexcept(false);
 
 	// Setters
