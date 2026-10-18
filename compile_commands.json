@@ -1,13 +1,140 @@
 [
   {
+    "file": "src/Appointment.cpp",
+    "arguments": [
+      "/usr/bin/g++",
+      "-g",
+      "-DDEBUG",
+      "-Wall",
+      "-std=c++20",
+      "-I./include",
+      "-I../vendor/nlohmann-json/include",
+      "-o",
+      ".obj/Appointment.o",
+      "-c",
+      "src/Appointment.cpp"
+    ],
+    "directory": "/home/ThatChemical/Documents/College/CS499-CS-Capstone/Enhancments/CS-320-Journal-enhancement1/Appointment-contact-book",
+    "output": ".obj/Appointment.o"
+  },
+  {
+    "file": "src/AppointmentService.cpp",
+    "arguments": [
+      "/usr/bin/g++",
+      "-g",
+      "-DDEBUG",
+      "-Wall",
+      "-std=c++20",
+      "-I./include",
+      "-I../vendor/nlohmann-json/include",
+      "-o",
+      ".obj/AppointmentService.o",
+      "-c",
+      "src/AppointmentService.cpp"
+    ],
+    "directory": "/home/ThatChemical/Documents/College/CS499-CS-Capstone/Enhancments/CS-320-Journal-enhancement1/Appointment-contact-book",
+    "output": ".obj/AppointmentService.o"
+  },
+  {
+    "file": "src/Contact.cpp",
+    "arguments": [
+      "/usr/bin/g++",
+      "-g",
+      "-DDEBUG",
+      "-Wall",
+      "-std=c++20",
+      "-I./include",
+      "-I../vendor/nlohmann-json/include",
+      "-o",
+      ".obj/Contact.o",
+      "-c",
+      "src/Contact.cpp"
+    ],
+    "directory": "/home/ThatChemical/Documents/College/CS499-CS-Capstone/Enhancments/CS-320-Journal-enhancement1/Appointment-contact-book",
+    "output": ".obj/Contact.o"
+  },
+  {
+    "file": "src/ContactService.cpp",
+    "arguments": [
+      "/usr/bin/g++",
+      "-g",
+      "-DDEBUG",
+      "-Wall",
+      "-std=c++20",
+      "-I./include",
+      "-I../vendor/nlohmann-json/include",
+      "-o",
+      ".obj/ContactService.o",
+      "-c",
+      "src/ContactService.cpp"
+    ],
+    "directory": "/home/ThatChemical/Documents/College/CS499-CS-Capstone/Enhancments/CS-320-Journal-enhancement1/Appointment-contact-book",
+    "output": ".obj/ContactService.o"
+  },
+  {
+    "file": "src/LinerIdGenerator.cpp",
+    "arguments": [
+      "/usr/bin/g++",
+      "-g",
+      "-DDEBUG",
+      "-Wall",
+      "-std=c++20",
+      "-I./include",
+      "-I../vendor/nlohmann-json/include",
+      "-o",
+      ".obj/LinerIdGenerator.o",
+      "-c",
+      "src/LinerIdGenerator.cpp"
+    ],
+    "directory": "/home/ThatChemical/Documents/College/CS499-CS-Capstone/Enhancments/CS-320-Journal-enhancement1/Appointment-contact-book",
+    "output": ".obj/LinerIdGenerator.o"
+  },
+  {
+    "file": "src/Task.cpp",
+    "arguments": [
+      "/usr/bin/g++",
+      "-g",
+      "-DDEBUG",
+      "-Wall",
+      "-std=c++20",
+      "-I./include",
+      "-I../vendor/nlohmann-json/include",
+      "-o",
+      ".obj/Task.o",
+      "-c",
+      "src/Task.cpp"
+    ],
+    "directory": "/home/ThatChemical/Documents/College/CS499-CS-Capstone/Enhancments/CS-320-Journal-enhancement1/Appointment-contact-book",
+    "output": ".obj/Task.o"
+  },
+  {
+    "file": "src/TaskService.cpp",
+    "arguments": [
+      "/usr/bin/g++",
+      "-g",
+      "-DDEBUG",
+      "-Wall",
+      "-std=c++20",
+      "-I./include",
+      "-I../vendor/nlohmann-json/include",
+      "-o",
+      ".obj/TaskService.o",
+      "-c",
+      "src/TaskService.cpp"
+    ],
+    "directory": "/home/ThatChemical/Documents/College/CS499-CS-Capstone/Enhancments/CS-320-Journal-enhancement1/Appointment-contact-book",
+    "output": ".obj/TaskService.o"
+  },
+  {
     "file": "src/main.cpp",
     "arguments": [
       "/usr/bin/g++",
       "-g",
       "-DDEBUG",
       "-Wall",
-      "-I./include",
       "-std=c++20",
+      "-I./include",
+      "-I../vendor/nlohmann-json/include",
       "-o",
       ".obj/main.o",
       "-c",

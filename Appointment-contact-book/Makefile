@@ -33,7 +33,7 @@ DEP = $(OBJ:$(OBJDIR)/%.o=$(DEPDIR)/%.d)
 
 # Compiler and Compiler options
 CXX = g++
-CXXFLAGS += -Wall -I./include -std=c++20
+CXXFLAGS += -Wall -std=c++20 -I./include -I../vendor/nlohmann-json/include
 LDFLAGS = 
 
 # pre-compiled headers options

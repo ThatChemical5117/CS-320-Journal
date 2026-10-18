@@ -32,7 +32,7 @@ DEP = $(OBJ:$(OBJDIR)/%.o=$(DEPDIR)/%.d)
 
 # Compiler and Compiler options
 CXX = g++
-CXXFLAGS += -Wall -I./include  -I../Appointment-contact-book/include
+CXXFLAGS += -Wall -I./include -I../vendor/nlohmann-json/include -I../Appointment-contact-book/include
 LDFLAGS = -lgtest -lgtest_main -lpthread
 # Hook into project binary files
 LDFLAGS += $(filter-out ../Appointment-contact-book/.obj/main.o, $(wildcard ../Appointment-contact-book/.obj/*.o))

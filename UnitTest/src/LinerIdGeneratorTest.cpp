@@ -5,10 +5,10 @@
 #include <gtest/gtest.h>
 #include <Impl/LinerIdGenerator.h>
 
-class LinerIdGeneratorTest: public testing::Test
+class LinearIdGeneratorTest: public testing::Test
 {
 protected:
-	LinerIdGeneratorTest()
+	LinearIdGeneratorTest()
 	{
 		// Fill the array
 		for (std::size_t i = 0; i < 8; i++)
@@ -18,12 +18,12 @@ protected:
 	}
 
 	// Hold generator and id array;
-	LinerIdGenerator m_generator;
+	LinearIdGenerator m_generator;
 	std::array<std::uint64_t, 8> m_ids;
 };
 
 
-TEST_F(LinerIdGeneratorTest, CheckIds)
+TEST_F(LinearIdGeneratorTest, CheckIds)
 {
 	// assert that the gap between any two numbers is only one
 	ASSERT_EQ(m_ids[3] - m_ids[2], 1);
@@ -31,7 +31,7 @@ TEST_F(LinerIdGeneratorTest, CheckIds)
 }
 
 
-TEST_F(LinerIdGeneratorTest, CheckIdsAreLiner)
+TEST_F(LinearIdGeneratorTest, CheckIdsAreLiner)
 {
 	std::uint64_t sum {};
 
